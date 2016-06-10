@@ -78,7 +78,7 @@ class Services {
      * @Bean
      * @return \Symfony\Component\HttpKernel\EventListener\RouterListener
      */
-    public function listenerRouter()
+    protected function listenerRouter()
     {
         return new \Symfony\Component\HttpKernel\EventListener\RouterListener(
             $this->matcher(),
@@ -90,7 +90,7 @@ class Services {
      * @Bean
      * @return \Framework\StringResponseListener
      */
-    public function ListenerStringResponse()
+    protected function ListenerStringResponse()
     {
         return new \Framework\StringResponseListener();
     }
@@ -99,7 +99,7 @@ class Services {
      * @Bean
      * @return \Symfony\Component\HttpKernel\EventListener\ExceptionListener
      */
-    public function listenerException()
+    protected function listenerException()
     {
         return new \Symfony\Component\HttpKernel\EventListener\ExceptionListener('\Framework\\ExceptionManager::handle');
     }
