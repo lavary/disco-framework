@@ -1,0 +1,20 @@
+{
+    "require": {
+        "symfony/http-foundation": "^3.1",
+        "symfony/routing": "^3.1",
+        "symfony/http-kernel": "^3.1",
+        "phpunit/phpunit": "^5.3",
+        "symfony/event-dispatcher": "^3.1",
+        "symfony/dependency-injection": "^3.1",
+        "bitexpert/disco": "^0.3.0",
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [
+            "src/Services.php"
+        ]
+    }
+}
